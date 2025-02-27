@@ -1,0 +1,561 @@
+
+body{
+    background-color: #08080800;
+    
+
+    margin: 0;
+}
+p{
+    font-family:"IBM Plex Mono", serif;
+}
+h1{
+    font-family: "Raleway", serif;
+}
+
+
+/* Header Begins Starts Here */
+
+/* Navigation Begins Here */
+nav{
+    display: flex;
+    justify-content: center;
+}
+.Real{
+    display: flex;
+    width: 85%;
+    border-radius: 0px 0px 8px 8px;
+    background-color: #1B1B1B;
+}
+nav section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+nav ul{
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+    color: #9C9C9C;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0px 0px 10px 10px;
+    font-family: "IBM Plex Mono", serif;
+    a{
+        text-decoration: none;
+        color: #9C9C9C;
+        
+    }
+    
+}.Real ul{
+    display: flex;
+}
+.l img{
+    width: 20px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Navigation Ends Here */
+
+
+
+header{
+    background-color:#080808 ;
+    padding-bottom: 30px;
+
+}
+main{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    gap: 10px;
+    
+}
+main p{
+    color: #9C9C9C;
+    font-size: 15px;
+    font-family:"IBM Plex Mono", serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+main h1{
+    color:#ffffff ;
+    font-size: 45px;
+    margin-bottom: 0;
+    
+    font-weight: 800;
+    
+    
+}
+.M2{
+    display: flex;
+    justify-content: center;
+}
+.Profile_pic{
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.Profile_pic img{
+   
+    width: 100%;    
+    border-radius: 100%;
+}
+
+.qwert{
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    /* height: 400px; */
+    align-items: center;
+    
+}
+.Intro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    h1{
+        width: 100%;
+    }
+}
+.Intro button{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: medium;
+    border: none;
+    font-family: "IBM Plex Mono", serif ;
+    width: 60%;
+    text-align: center;
+    min-width: 200px ;
+    background-color: #3F8E00;
+    color: #ffffff;
+
+}.Intro button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+/* .comp{
+    
+} */
+.companies{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 75%;
+}
+.companies img{
+    width: 100%;
+}
+.companies div{
+    /* background-color: #3F8E00; */
+    /* width: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #616161;
+    border-radius: 10px;
+}
+.comp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.CaseS{
+    display: flex;
+    justify-content: center;
+}
+.CaseP{
+    width: 70%;
+}
+.CardT{
+    display: flex;
+    
+    
+    border-radius: 20px;
+    margin-bottom: 30px;
+    
+    
+    p{
+        color: #9C9C9C;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+
+}
+.CardT button{
+    font-family:"IBM Plex Mono", serif ;
+}
+
+.CardT img{
+    width: 100%;
+    
+}
+.CTxt{
+    width: 50%;
+    padding: 20px;
+    
+}
+.CImage{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+#CT1 button,#CT2 button,#CT3 button{
+    
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    
+}
+#CT1 span{
+    background-color: #ffa21746;
+    color: #FFA217;
+    padding: 10px;
+    border-radius: 40px;
+    font-weight: 400;
+    font-family: "Raleway", serif;
+    font-size: 13px;
+}
+#CT2{
+    flex-direction: row-reverse;
+}
+#CT2 span{
+    background-color: #0008ff60;
+    color: #000AFF;
+    padding: 10px;
+    border-radius: 40px;
+    font-weight: 400;
+    font-family: "Raleway", serif;
+    font-size: 13px;
+}
+#CT3 span{
+    background-color: #2ab09142;
+    color: #2AB090;
+    padding: 10px;
+    border-radius: 40px;
+    font-weight: 400;
+    font-family: "Raleway", serif;
+    font-size: 13px;
+}
+.CaseM{
+    padding-top: 20px;
+}.Testimonials{
+    background-color: #080808;
+    
+    color: #ffffff;
+}
+.Def{
+    display: flex;
+    justify-content: center;
+}
+.ClientT{
+    width: 35%;
+    border: 1px solid rgb(240, 240, 240); 
+    border-radius: 10px;
+    border-right: 0;
+    padding: 40px;
+    border-bottom-right-radius:0px ;
+    border-top-right-radius: 0px;
+    p{
+        color: #9C9C9C;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+    }
+}
+.ClientM{
+    
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.ClientC{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 70px 0;
+}
+.RecentK{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+
+}
+.RecentM{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.RecentT{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.RecentK p{
+    color: #9C9C9C;
+}
+.RecentT button{
+    padding: 12px;
+    color: #ffffff;
+    background-color: #3F8E00;
+    border: none;
+    border-radius: 7px;
+    width: 30%;
+    font-family:"IBM Plex Mono", serif;
+    min-width: 150px;
+}
+.RecentT img{
+    width: 100%;
+}
+.next{
+    width: 15%;
+    margin: auto 0;
+    display: flex;
+    
+}.RecentM{
+    padding: 50px 0;
+}
+.next button{
+    border: none;
+    background:none;
+    margin: 0 auto;
+}
+.next img{
+    width: 100%;
+}
+.ContactUs{
+    background-color: #080808;
+    padding: 50px 0;
+}
+.fillform{
+    color: #ffffff;
+    
+    width: 30%;
+    label{
+        font-family: "IBM Plex Mono", serif;
+        padding: 10px 0;
+    }
+    input{
+        padding: 15px 0;
+        padding-left: 15px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        overflow: hidden;
+        font-family: "IBM Plex Mono", serif;
+        
+    }
+    button{
+        margin-top: 20px;
+        width: 103%;
+        padding: 15px;
+        font-family: "IBM Plex Mono", serif;
+        background-color: #3F8E00;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+    form{
+        width: 100%;
+    }
+    
+}
+footer{
+    background-color: #1b1b1b;
+    padding: 20px;
+    p{
+        margin: 0;
+        color: #ffffff;
+    }
+}
+.Recent{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px){
+    .CaseP{
+        width: 90%;
+    }
+    .Txt {
+        width: 100%;
+       div{
+        width: 100% !important;
+    } 
+    } 
+    .Txt1 {
+        width: 100%;
+       div{
+        width: 90% !important;
+    } }
+    .CardT{
+        flex-direction: column-reverse !important;
+    }
+    .CTxt{
+        padding: 0;
+        width: 100%;
+    }
+    .CImage{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .ClientT{
+        width: 100% !important;
+    }
+    .fillform{
+        width: 70%;
+    }
+    .Intro button{
+        min-width: 0;
+    }
+    .Intro h1{
+        font-size: 30px;
+    }
+    .qwert{
+        width: 100%;
+    }
+    main{
+        flex-direction: column-reverse;
+        button{
+            min-width: 0 !important;
+        }
+    }
+    .Profile_pic{
+        width: 100%;
+    }
+    .companies{
+        flex-wrap: wrap;
+    }
+
+    .Real ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        li{
+            padding: 10px;
+        }
+    }
+    .Ham{
+        display: flex !important;
+        width: 100%;
+        padding: 20px;
+        
+        img{
+            width: 100%;
+        } 
+        div{
+          display: flex !important;  
+          width: 85%;
+          text-align: center;
+          color: #ffffff;
+          padding: 20px;
+          font-weight: 600;
+          p{
+            margin: 0;
+          }
+        } 
+    }
+    .Real{
+        display: none;
+    }
+    .Side{
+        /* background: none !important; */
+        display: flex !important;
+        
+    }
+    #SDE{
+        display: none;
+        flex-direction: column;
+    }
+    .ti{
+        display: block;
+        
+    }
+    .fp{
+        display: flex !important;
+    }
+    .Recent{
+        flex-direction: column;
+    }
+    .RecentT{
+        width: 100%;
+    }
+}
+.Ham{
+    display: none;
+    div{
+        display: none;
+    }
+    button{
+        width: 15%; 
+        background: none;
+        border: none;
+    }
+}
+#SDE{
+    background-color: #1B1B1B;
+}
+.Side{
+    
+    justify-content: space-evenly !important;
+    display: none;
+    padding-top: 20px;
+    background: none ;
+    left: 0px;
+    
+    position: absolute;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        align-items: center;
+        margin: 0px;
+        padding-left: 0px;
+    }
+    li{
+        padding: 10px;
+    }
+    button{
+        
+        background: none;
+        border: none;
+    }
+    li img{
+        width: 25px;
+    }
+}
+.fp{
+    display: none;
+    width: 100%;
+}
+/* .ti{
+    display: none;
+    padding: 0px !important;
+} */
+#SDE li{
+    padding: 20px;
+}
