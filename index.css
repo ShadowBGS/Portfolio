@@ -503,6 +503,12 @@ footer{
     .RecentT{
         width: 100%;
     }
+    .RecentK{
+        width: 80%;
+    }
+    .next{
+        display: none;
+    }
 }
 .Ham{
     display: none;
@@ -558,4 +564,26 @@ footer{
 } */
 #SDE li{
     padding: 20px;
+}
+.toTop{
+    padding: 20px;
+    background-color: rgb(202, 200, 200);
+    color: #000000;
+    position: fixed;
+    right: 30px;
+    bottom: 15px;
+    border: none;
+    border-radius: 40%;
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family:"IBM Plex Mono", serif;
+        font-size: 20px;
+        font-weight: 800;
+        width: 100%;
+    }
+    transition-duration: 0.5s;
+}
+.toTop:hover{
+    background-color: #3F8E00;
 }
