@@ -1,286 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="Images/Group 1.svg">
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Oluwademilade Fajolu, Computer Science graduate and backend developer focused on C#, ASP.NET Core, REST APIs and SQL. Projects, experience and CV.">
+  <meta name="theme-color" content="#080808">
+  <meta property="og:title" content="Oluwademilade Fajolu | Backend Developer">
+  <meta property="og:description" content="Backend projects, internship experience and the work I'm building next. C# / ASP.NET Core / SQL.">
+  <meta property="og:type" content="website">
+  <title>Oluwademilade Fajolu | Backend Developer</title>
+  <link rel="icon" type="image/svg+xml" href="Images/monogram.svg">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
 </head>
 <body>
-    <header >
-        
-        <nav id="M2">
-            <div class="fp">
-                <div class="Side" id="SideR">
-                    <ul>
-                        <li id="openBtn" class="ti"><button onclick="openSide()"><img src="Images/hamburger-svgrepo-com.svg" alt=""></button></li>
-                        
-                        <section id="SDE" style="gap: 40px;">
-                        <li id="closeBtn"><button onclick="closeSide()"><img src="Images/hamburger-svgrepo-com.svg" alt=""></button></li>
-                        <li class="side-item"><a href="#Home">Home</a> </li>
-                        <li class="side-item"> <a href="#Case Studies">Case Studies</a> </li>
-                        <li class="side-item"><a href="#Testimonials">Testimonials</a> </li>
-                        <li class="side-item"><a href="#Recent Work">Recent Work</a> </li>
-                        <li class="side-item" class="n"><a href="#Get In Touch">Get In Touch</a> </li>
-                        <li class="side-item" class="l" style="overflow: hidden;">
-                            
-                            <a href=""><img src="Images/LinkedIn.svg" alt="LinkedIn.com" ></a>
-                            <a href=""><img src="Images/Behance.svg" alt="Behance.com"></a>
-                            <a href=""><img src="Images/Twitter.svg" alt="Twitter.com"></a>
-                            
-                        </li>
-                    </section>
-                    </ul>
-                </div>
-                <div class="Ham">
-                    <!-- <button><img src="Images/hamburger-svgrepo-com.svg" alt=""></button> -->
-                    <div style="width: 100%;justify-content: center;"><p>Portfolio</p></div>
-                </div>
-            </div>
-            
-            <div class="Real">
-                <section>
-                    <ul>
-                        <li><a href="#Home">Home</a> </li>
-                        <li> <a href="#Case Studies">Case Studies</a> </li>
-                        <li><a href="#Testimonials">Testimonials</a> </li>
-                        <li><a href="#Recent Work">Recent Work</a> </li>
-                        <li class="n"><a href="#Get In Touch">Get In Touch</a> </li>
-                        <li class="l" style="overflow: hidden;">
-                            
-                            <a href=""><img src="Images/LinkedIn.svg" alt="LinkedIn.com" ></a>
-                            <a href=""><img src="Images/Behance.svg" alt="Behance.com"></a>
-                            <a href=""><img src="Images/Twitter.svg" alt="Twitter.com"></a>
-                            
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </nav>
-        <section id="M3" class="M2">
-        <main>
-            <div class="qwert">
-                <div class="Intro">
-                    <h1>Oluwademilade Fajolu</h1>
-                    <p>
-                        Hey, I'm Demilade! I'm a passionate Software Engineer and Developer who loves building efficient, user-friendly applications. I work with HTML, CSS, C#, APIs. Check out my projects in UI/UX design and Website design
-                    </p>
-                    <!-- <p>Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
-                    <button>Let's get started > </button>
-                </div>
-            </div>
-            
-            <div class="Profile_pic">
-                <img src="Images/attention-svgrepo-com.svg" alt="">
-            </div>
-            
-        </main>
-       
-        </section> 
-        <div style="display: flex;justify-content: center;font-family: IBM Plex Mono, serif;">
-            <div style="width: 75%;color: #ffffff;">
-                <p>Worked with</p>
-            </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="home">
+    <nav class="navigation wrap" aria-label="Main navigation">
+      <a class="wordmark" href="#home" aria-label="Demilade, home">demilade<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" hidden>Menu <span aria-hidden="true">+</span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a class="nav-social" href="https://github.com/ShadowBGS" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero dark" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Backend developer · Lagos, Nigeria</p>
+          <h1 id="hero-title">Oluwademilade<br>Fajolu<span class="accent">.</span></h1>
+          <p class="hero-lead">I build the services<br>behind the screen.</p>
+          <p class="hero-description">I'm Demilade, a Computer Science graduate focused on C# and ASP.NET Core. I work on APIs, authentication and relational databases, turning requirements into working backend features.</p>
+          <div class="actions"><a class="button button-primary" href="#projects">Explore my work ↘</a><a class="button button-outline" href="assets/Oluwademilade_Fajolu_Backend_CV.pdf" download>Download CV ↓</a></div>
+          <p class="availability">Open to graduate and junior backend opportunities · Open to relocation</p>
         </div>
-        
-        <div class="comp">
-            <div class="companies">
-                
-                <div>
-                    <img src="Images/clickup logo 1.png" alt="">
-                </div>
-                <div>
-                    <img src="Images/dropbox_blue 1.png" alt="">
-                </div>
-                <div>
-                    <img src="Images/Group.png" alt="">
-                </div>
-                <div>
-                    <img src="Images/Elastic logo 1.png" alt="">
-                </div>
-                <div>
-                    <img src="Images/Group-1.png" alt="">
-                </div>
-            </div>
-        </div>
-    </header>
-    <section id="Case Studies" class="CaseS">
-        <div class="CaseP" >
-            <div style="display: flex; justify-content: center;margin-top: 60px;" class="Txt">
-                <div style="text-align: center; width: 80%; display: flex; flex-direction: column; justify-content: center;" class="CaseH" >
-                    <h1 style="font-size: xx-large;margin-bottom: 0;">Case Studies</h1>
-                    <p style="font-size: 14px; color: #9C9C9C" >Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-            <div class="CaseM">
-                <div id="CT1" class="CardT">
-                    
-                    <div class="CTxt">
-                        <span>Fintech</span>
-                        <h1>PennyWise</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                        <button style="background-color: #FFA217">View case study></button>
-                    </div>
-                    <div class="CImage">
-                        <img src="Images/Mask group.svg" alt="">
-                    </div>
-                </div>
-                <div id="CT2" class="CardT">
-                    <div class="CTxt">
-                        <span>E-commerce</span>
-                        <h1>Sereno</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                        <button style="background-color: #000AFF">View case study></button>
-                    </div>
-                    <div class="CImage">
-                        <img src="Images/Mask group-1.svg" alt="">
-                    </div>
-                </div><div id="CT3" class="CardT">
-                    <div class="CTxt">
-                        <span>Fintech</span>
-                        <h1>PennyWise</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                        <button style="background-color: #2AB090">View case study></button>
-                    </div>
-                    <div class="CImage">
-                        <img src="Images/Mask group-2.svg" alt="">
-                    </div>
-                </div>
-                
-            </div>  
-        </div>
-        
+        <aside class="backend-card" aria-label="My backend development focus">
+          <div class="card-top"><span>behind-the-screen</span><span class="small-label">MY FOCUS</span></div>
+          <div class="flow-node"><span class="node-icon" aria-hidden="true">01</span><div><h2>REST APIs</h2><p>C# · ASP.NET Core</p></div><span class="node-symbol" aria-hidden="true">{ }</span></div>
+          <div class="flow-connector" aria-hidden="true">↓</div>
+          <div class="flow-node"><span class="node-icon" aria-hidden="true">02</span><div><h2>Access &amp; validation</h2><p>JWT · Role-based permissions</p></div><span class="node-symbol" aria-hidden="true">✓</span></div>
+          <div class="flow-connector" aria-hidden="true">↓</div>
+          <div class="flow-node"><span class="node-icon" aria-hidden="true">03</span><div><h2>Relational data</h2><p>SQL Server · SQLite</p></div><span class="node-symbol" aria-hidden="true">▤</span></div>
+          <p class="card-bottom"><span class="accent" aria-hidden="true">→</span> From request to stored record.</p>
+        </aside>
+      </div>
+      <div class="wrap stack-strip" aria-label="Core technologies"><span>WORKING WITH</span><ul><li>C#</li><li>ASP.NET Core</li><li>SQL Server</li><li>REST APIs</li><li>Git</li><li>Postman</li></ul></div>
     </section>
-    <section id="Testimonials" class="Testimonials">
-        <div class="Def">
-            <div style="color: #ffffff;" >
-                <div style="display: flex; justify-content: center; margin-top: 70px;" class="Txt1">
-                    <div style="text-align: center; width: 80%; display: flex; flex-direction: column; justify-content: center;" class="CaseH" >
-                        <h1 style="font-size: xx-large;margin-bottom: 0;">Testimonials</h1>
-                        <p style="font-size: 14px; color: #9C9C9C" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div>
-                </div>
-            </div>
+    <section class="projects section-light" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">What I've been building.</h2></div><p>Academic projects and internship work, with a focus on the systems underneath.</p></div>
+        <article class="project project-featured">
+          <div class="project-copy">
+            <p class="project-type">FINAL-YEAR PROJECT</p><h3>Attendance that works<br>without the internet.</h3><p class="project-name">Offline Mobile Attendance Management System</p>
+            <p>I developed backend services for an attendance system combining facial verification, proximity checks and an offline data layer. The challenge was keeping attendance records usable when devices couldn't reach the internet.</p>
+            <ul class="project-details"><li>FastAPI services for verification and session management.</li><li>SQLite/Drift data design and peer-to-peer synchronisation over Wi-Fi Direct.</li><li>Backend integration with a Flutter client.</li></ul>
+            <ul class="tags" aria-label="Project technologies"><li>FastAPI</li><li>SQLite / Drift</li><li>Flutter</li><li>Wi-Fi Direct</li></ul>
+            <div class="project-links"><a href="https://github.com/ShadowBGS/att_back" target="_blank" rel="noopener noreferrer">Backend source ↗</a><a href="https://github.com/ShadowBGS/Attendance" target="_blank" rel="noopener noreferrer">Flutter source ↗</a></div>
+          </div>
+          <div class="project-visual" role="img" aria-label="Architecture illustration: attendance records stored locally and synchronised between devices over Wi-Fi Direct.">
+            <p class="visual-label">SYSTEM OVERVIEW</p>
+            <div class="device-pair"><div class="device"><span>DEVICE A</span><i></i><i class="short"></i><i></i><small>Local records</small></div><div class="sync-indicator"><span aria-hidden="true">⇄</span><small>Wi-Fi<br>Direct</small></div><div class="device"><span>DEVICE B</span><i></i><i class="short"></i><i></i><small>Local records</small></div></div>
+            <p class="diagram-caption">Record locally. Reconcile between devices.</p><p class="visual-note">Architecture illustration · not an app screenshot</p>
+          </div>
+        </article>
+        <div class="project-grid">
+          <article class="project project-small"><span class="project-number">02</span><p class="project-type">BACKEND PROJECT</p><h3>Library Management System</h3><p>REST APIs for book cataloguing, user registration, borrowing and returns. I designed relational schemas, added authentication and role-based access, and worked on search and availability queries.</p><ul class="tags" aria-label="Project focus"><li>REST APIs</li><li>Relational data</li><li>Authentication</li></ul><a class="text-link" href="https://github.com/ShadowBGS/AB" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></article>
+          <article class="project project-small"><span class="project-number">03</span><p class="project-type">WEMA BANK · INTERNSHIP</p><h3>Internship Management System</h3><p>Backend modules for intern, supervisor, department and attendance workflows. My contributions included JWT authentication, role-based permissions, database design and department capacity logic.</p><ul class="tags" aria-label="Project technologies"><li>ASP.NET Core</li><li>JWT</li><li>SQL</li></ul><a class="text-link" href="#experience">About my contribution ↓</a></article>
         </div>
-        <div class="ClientC">
-            
-            <div class="ClientM">
-                
-                <div class="ClientT">
-                    <div style="display: flex; margin: 0; font-size: 120px; position: relative;left: 20px;z-index: 2;top: -80px;height: 0px;font-family: Raleway, serif; ">“</div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div> 
-                    <div style="display: flex; gap: 10px;">
-                        <img src="Images/Client photo 1 (1).svg" alt="">
-                        <h1>Client Name</h1>
-                    </div>   
-                </div>
-                
-                <div class="ClientT">
-                    <div style="display: flex; margin: 0; font-size: 120px; position: relative;left: 20px;z-index: 2;top: -80px;height: 0px;font-family: Raleway, serif; ">“</div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div> 
-                    <div style="display: flex; gap: 10px;">
-                        <img src="Images/Client photo 1.svg" alt="">
-                        <h1>Client Name</h1>
-                    </div>   
-                </div>
-                <div class="ClientT">
-                    <div style="display: flex; margin: 0; font-size: 120px; position: relative;left: 20px;z-index: 2;top: -80px;height: 0px;font-family: Raleway, serif; ">“</div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div> 
-                    <div style="display: flex; gap: 10px;">
-                        <img src="Images/Client photo 2.svg" alt="">
-                        <h1>Client Name</h1>
-                    </div>   
-                </div>
-                <div class="ClientT">
-                    <div style="display: flex; margin: 0; font-size: 120px; position: relative;left: 20px;z-index: 2;top: -80px;height: 0px;font-family: Raleway, serif; ">“</div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div> 
-                    <div style="display: flex; gap: 10px;">
-                        <img src="Images/Client photo 2.svg" alt="">
-                        <h1>Client Name</h1>
-                    </div>   
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
-    <section id="Recent Work" class="RecentW">
-        <div style="display: flex; justify-content: center;margin-top: 60px;"class="Txt1">
-            <div style="text-align: center; width: 70%; display: flex; flex-direction: column; justify-content: center;" class="CaseH" >
-                <h1 style="font-size: xx-large;margin-bottom: 0;">Recent Work</h1>
-                <p style="font-size: 14px; color: #9C9C9C;" >Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-        </div >
-        <div class="RecentM">
-            
-            <div class="RecentK">
-                <div class="next"><button><img src="Images/Call to action.svg" alt=""></button></div>
-                <div class="Recent">
-                    <div class="RecentT">
-                        <div style="width: 100%;">
-                            <img src="Images/Mask group.png" alt="">
-                        </div>
-                        <div class="RecentU" >
-                            <h1>Work name here</h1>
-                            <p>Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                            <button>Know more ></button>
-                        </div>
-                    </div>
-                    <div class="RecentT">
-                        <div>
-                            <img src="Images/Mask group (1).png" alt="">
-                        </div>
-                        <div class="RecentU" >
-                            <h1>Work name here</h1>
-                            <p>Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                            <button>Know more ></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="next"><button><img src="Images/Call to action (1).svg" alt=""></button></div>
-            </div>
-            
+    <section class="experience dark" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / EXPERIENCE</p><h2 id="experience-title">Learning through real work.</h2></div><p>From software internships to my current national service placement.</p></div>
+        <div class="timeline">
+          <article class="experience-row"><div class="experience-date"><span class="current-label">CURRENT</span><p>NYSC placement</p></div><div class="experience-content"><h3>Outspan Nigeria Limited</h3><p class="role">NYSC Corps Member · Monitoring &amp; Evaluation</p><p>Currently completing my Place of Primary Assignment in the Monitoring and Evaluation department.</p></div></article>
+          <article class="experience-row"><div class="experience-date"><p>Jan — Jun 2025</p><span>Lagos, Nigeria</span></div><div class="experience-content"><h3>Wema Bank Plc</h3><p class="role">Backend Developer · SIWES Internship</p><ul><li>Built ASP.NET Core modules for an Internship Management System.</li><li>Implemented JWT authentication and role-based access control.</li><li>Designed relational schemas and developed attendance and department capacity logic.</li><li>Collaborated with the team through bi-weekly Agile sprint meetings.</li></ul></div></article>
+          <article class="experience-row"><div class="experience-date"><p>Jul — Sep 2022</p><span>Lagos, Nigeria</span></div><div class="experience-content"><h3>Kallo</h3><p class="role">Software Engineer Intern</p><p>Contributed to feature research, documentation, testing and validation, and supported deployment activities.</p></div></article>
         </div>
+      </div>
     </section>
-    <section id="Get In Touch" class="ContactUs">
-        <div style="display: flex; justify-content: center;margin-top: 60px;" class="Txt1">
-            <div style="text-align: center; width: 55%; display: flex; flex-direction: column; justify-content: center;" class="CaseH" >
-                <h1 style="font-size: xx-large;margin: 0;color: #ffffff;">Get In Touch</h1>
-                <p style="font-size: 14px; color: #9C9C9C;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-            </div>
-        </div >
-        <div style="display: flex;justify-content: center;padding-top: 50px;width: 100%;">
-            <div class="fillform">
-                <form action="" style="display: flex;flex-direction: column;">
-                    <label for="">Email</label>
-                    <input type="text" placeholder="Please enter your email ">
-                    <label for="">Mobile</label>
-                    <input type="text" placeholder="Enter your phone number">
-                    <label for="">Message</label>
-                    <input style="padding-bottom: 100px;" type="text" placeholder="Enter your message">
-                    <div><button>Submit ></button></div>
-                </form>
-                
-            </div>
-        </div>
+    <section class="about section-light" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div><p class="eyebrow">03 / A LITTLE ABOUT ME</p><h2 id="about-title">Backend first.<br>Curious beyond it.</h2><p>I enjoy figuring out how a system should behave: who can access it, how its data fits together, and what happens when a connection drops.</p><p>My main focus is C# and ASP.NET Core. I've also used Python/FastAPI and Flutter on projects, and I'm interested in the overlap between backend development, SQL and data analysis.</p><div class="education"><span class="small-label">EDUCATION</span><h3>B.Sc. Computer Science</h3><p>Babcock University · 2022–2026<br>CGPA: 4.39 / 5.00</p></div></div>
+        <div class="skills-panel"><h3>Tools I bring to the work</h3><dl><div><dt>Backend</dt><dd>C#, ASP.NET Core, REST APIs, JWT, role-based access control</dd></div><div><dt>Data</dt><dd>SQL Server, SQLite/Drift, schema design, normalization, query optimization</dd></div><div><dt>Workflow</dt><dd>Git, Postman, Visual Studio, Agile collaboration</dd></div><div><dt>Also worked with</dt><dd>Python/FastAPI, Java, JavaScript/TypeScript, Flutter/Dart</dd></div></dl></div>
+      </div>
     </section>
-    <button class="toTop"><a href="#M2">↑</a></button>
-    <footer>
-        <p style="text-align: center;">Made with ❤️</p>
-    </footer>
-    <script src="index.js"></script>
+    <section class="contact dark" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">04 / GET IN TOUCH</p><h2 id="contact-title">Let's build<br>something useful<span class="accent">.</span></h2><p>Hiring for a graduate or junior backend role? I'd be glad to talk about your team, show you my projects and discuss how I could contribute.</p><p class="contact-location">Based in Lagos, Nigeria · Open to relocation</p></div><div class="contact-links"><a class="email-link" href="mailto:demiladefajolu@gmail.com">demiladefajolu@gmail.com ↗</a><a href="https://github.com/ShadowBGS" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/oluwademilade-f" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="assets/Oluwademilade_Fajolu_Backend_CV.pdf" download>Download my CV ↓</a></div></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><p>© <span id="year">2026</span> Oluwademilade Fajolu</p><a href="#home">Back to top ↑</a></div></footer>
 </body>
 </html>
